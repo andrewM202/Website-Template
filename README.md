@@ -7,4 +7,5 @@ Features
 - Used CSS Grid and Flexbox
 - Media queries used for different sized devices
 
-<img width="1404" alt="Screen Shot 2021-02-21 at 9 35 05 PM" src="https://user-images.githubusercontent.com/70407217/108650089-be301e00-748c-11eb-99b0-ef7d7b11899c.png">
+<img width="1403" alt="Screen Shot 2021-02-21 at 9 36 40 PM" src="https://user-images.githubusercontent.com/70407217/108650163-e9b30880-748c-11eb-88e5-ad3172a8f3b7.png">
+
