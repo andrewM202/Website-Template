@@ -1,4 +1,5 @@
 let nightButton = document.querySelector('.night-button');
+let nightButtonPEl = document.querySelector('.night-button p');
 let bodyEl = document.querySelector('body');
 let mainEl = document.querySelector('main');
 let bodyHeader = document.querySelector('body > header');
@@ -10,8 +11,8 @@ let navPEl = document.querySelectorAll('nav a div p');
 
 const darkMode = function(event) {
   event.stopPropagation();
-  if(event.target.querySelector('p').textContent === "Light Mode On") {
-    event.target.style.backgroundColor = '#393e46';
+  if(nightButton.querySelector('p').textContent === "Light Mode On") {
+    nightButton.style.backgroundColor = '#393e46';
     bodyEl.style.backgroundColor = '#364f6b';
     mainEl.style.backgroundColor = '#364f6b';
 
@@ -23,9 +24,9 @@ const darkMode = function(event) {
     bodyHeader.style.boxShadow = 'inset 0px 1px 15px 5px black';
     footerEl.style.boxShadow = 'inset 0px 1px 15px 5px black';
 
-    event.target.querySelector('p').textContent = "Dark Mode On";
-  } else if(event.target.querySelector('p').textContent === "Dark Mode On") {
-    event.target.style.backgroundColor = '#ffd369';
+    nightButton.querySelector('p').textContent = "Dark Mode On";
+  } else if(nightButton.querySelector('p').textContent === "Dark Mode On") {
+    nightButton.style.backgroundColor = '#ffd369';
     bodyEl.style.backgroundColor = '#f6f6f6';
     mainEl.style.backgroundColor = '#f6f6f6';
 
@@ -37,8 +38,9 @@ const darkMode = function(event) {
     bodyHeader.style.boxShadow = 'inset 0px 1px 15px 5px white';
     footerEl.style.boxShadow = 'inset 0px 1px 15px 5px white';
 
-    event.target.querySelector('p').textContent = "Light Mode On";
+    nightButton.querySelector('p').textContent = "Light Mode On";
   }
 };
 
+nightButtonPEl.addEventListener('click', darkMode)
 nightButton.addEventListener('click', darkMode)
