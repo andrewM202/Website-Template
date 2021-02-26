@@ -8,6 +8,7 @@ let cards = document.querySelectorAll('.card');
 let pEl = document.querySelectorAll('p');
 let aEl = document.querySelectorAll('.grid a');
 let navPEl = document.querySelectorAll('nav a div p');
+let sectionHeaders = document.querySelectorAll('section header h1 a');
 
 const darkMode = function(event) {
   event.stopPropagation();
@@ -19,6 +20,7 @@ const darkMode = function(event) {
     cards.forEach((element) => element.style.backgroundColor = 'gray');
     pEl.forEach((element) => element.style.color = 'white');
     aEl.forEach((element) => element.style.color = 'white');
+    sectionHeaders.forEach((element) => element.style.color = 'white');
     navPEl.forEach((element) => element.style.color = 'black');
 
     bodyHeader.style.boxShadow = 'inset 0px 1px 15px 5px black';
@@ -33,6 +35,7 @@ const darkMode = function(event) {
     cards.forEach((element) => element.style.backgroundColor = '#d6e4f0');
     pEl.forEach((element) => element.style.color = 'blue');
     aEl.forEach((element) => element.style.color = 'white');
+    sectionHeaders.forEach((element) => element.style.color = 'black');
     navPEl.forEach((element) => element.style.color = 'blue');
 
     bodyHeader.style.boxShadow = 'inset 0px 1px 15px 5px white';
