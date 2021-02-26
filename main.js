@@ -1,4 +1,4 @@
-let let nightButton = document.querySelector('.night-button');
+let nightButton = document.querySelector('.night-button');
 let nightButtonPEl = document.querySelector('.night-button p');
 let bodyEl = document.querySelector('body');
 let mainEl = document.querySelector('main');
